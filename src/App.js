@@ -7,6 +7,7 @@ import AircraftView from './components/Aircraft/AircraftView';
 import Header from './components/Common/Header';
 import AboutPage from './components/About/AboutPage';
 import Tutorial from './components/Tutorial/Tutorial';
+import FeedbackWidget from './components/Feedback/FeedbackWidget';
 
 import {Redirect, Route, Switch} from 'react-router-dom';
 
@@ -38,6 +39,7 @@ function App() {
                 <AboutPage/>
               </Route>
             </Switch>
+        <FeedbackWidget/>
     </div>
   );
 }

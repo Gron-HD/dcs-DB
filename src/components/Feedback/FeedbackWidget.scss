@@ -1,0 +1,213 @@
+$accent: #eb0;
+$accent-hover: #fd2;
+
+.FeedbackWidget-root{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+
+    button{
+        font-family: inherit;
+        cursor: pointer;
+    }
+}
+
+.FeedbackWidget-fab{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: $accent;
+    color: black;
+    box-shadow: 0 0 8px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 200ms, transform 200ms;
+
+    &:hover{
+        background: $accent-hover;
+        transform: scale(1.05);
+    }
+
+    &.open{
+        background: #999;
+        color: white;
+    }
+}
+
+.FeedbackWidget-panel{
+    width: 340px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin-bottom: 12px;
+    background: #555;
+    box-shadow: 0 0 10px black;
+    border-radius: 8px;
+
+    form, .FeedbackWidget-success{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 16px 16px 16px;
+    }
+
+    textarea, input[type="email"]{
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        background: #EEE;
+        color: black;
+        padding: 10px;
+        font-family: inherit;
+        font-size: 1em;
+
+        &:focus{
+            outline: 2px solid $accent;
+        }
+    }
+
+    textarea{
+        min-height: 110px;
+        resize: vertical;
+    }
+}
+
+.FeedbackWidget-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #666;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2em;
+}
+
+.FeedbackWidget-close{
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.7;
+    padding: 0;
+    display: flex;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.FeedbackWidget-types{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.FeedbackWidget-type{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border-radius: 1000px;
+    padding: 5px 10px;
+    background: #999;
+    color: white;
+    font-size: 0.9em;
+    box-shadow: 0 0 4px black;
+
+    .material-icons{
+        font-size: 18px;
+    }
+
+    &:hover{
+        background: #aaa;
+    }
+
+    &.active{
+        background: $accent;
+        color: black;
+    }
+}
+
+.FeedbackWidget-botcheck{
+    display: none;
+}
+
+.FeedbackWidget-page{
+    font-size: 0.8em;
+    opacity: 0.7;
+    word-break: break-all;
+}
+
+.FeedbackWidget-error{
+    background: rgba(200, 40, 40, 0.8);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+
+.FeedbackWidget-submit{
+    align-self: flex-end;
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 20px;
+    background: $accent;
+    color: black;
+    font-size: 1em;
+    box-shadow: 0 0 4px black;
+
+    &:hover:not(:disabled){
+        background: $accent-hover;
+    }
+
+    &:disabled{
+        opacity: 0.5;
+        cursor: default;
+    }
+}
+
+.FeedbackWidget-success{
+    align-items: center;
+    text-align: center;
+
+    &>.material-icons{
+        font-size: 48px;
+        color: $accent;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    .FeedbackWidget-submit{
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .FeedbackWidget-root{
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+        pointer-events: none;
+
+        &>*{
+            pointer-events: auto;
+        }
+    }
+
+    .FeedbackWidget-panel{
+        width: 100%;
+    }
+
+    .FeedbackWidget-fab{
+        width: 48px;
+        height: 48px;
+    }
+}
