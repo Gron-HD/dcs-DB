@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/dcs-DB/static/css/main.785bc541.chunk.css",
-    "main.js": "/dcs-DB/static/js/main.23e56327.chunk.js",
-    "main.js.map": "/dcs-DB/static/js/main.23e56327.chunk.js.map",
+    "main.css": "/dcs-DB/static/css/main.1121a467.chunk.css",
+    "main.js": "/dcs-DB/static/js/main.1896c7ca.chunk.js",
+    "main.js.map": "/dcs-DB/static/js/main.1896c7ca.chunk.js.map",
     "runtime-main.js": "/dcs-DB/static/js/runtime-main.8a0db3e8.js",
     "runtime-main.js.map": "/dcs-DB/static/js/runtime-main.8a0db3e8.js.map",
-    "static/js/2.7fb87404.chunk.js": "/dcs-DB/static/js/2.7fb87404.chunk.js",
-    "static/js/2.7fb87404.chunk.js.map": "/dcs-DB/static/js/2.7fb87404.chunk.js.map",
+    "static/js/2.79307220.chunk.js": "/dcs-DB/static/js/2.79307220.chunk.js",
+    "static/js/2.79307220.chunk.js.map": "/dcs-DB/static/js/2.79307220.chunk.js.map",
     "index.html": "/dcs-DB/index.html",
-    "static/css/main.785bc541.chunk.css.map": "/dcs-DB/static/css/main.785bc541.chunk.css.map",
-    "static/js/2.7fb87404.chunk.js.LICENSE.txt": "/dcs-DB/static/js/2.7fb87404.chunk.js.LICENSE.txt"
+    "static/css/main.1121a467.chunk.css.map": "/dcs-DB/static/css/main.1121a467.chunk.css.map",
+    "static/js/2.79307220.chunk.js.LICENSE.txt": "/dcs-DB/static/js/2.79307220.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8a0db3e8.js",
-    "static/js/2.7fb87404.chunk.js",
-    "static/css/main.785bc541.chunk.css",
-    "static/js/main.23e56327.chunk.js"
+    "static/js/2.79307220.chunk.js",
+    "static/css/main.1121a467.chunk.css",
+    "static/js/main.1896c7ca.chunk.js"
   ]
 }
